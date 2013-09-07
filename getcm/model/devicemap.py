@@ -1,5 +1,8 @@
 devicemap = {
-    'blade2_p736e': 'ZTE Crescent (TMO)',
-    'blade2_p736v': 'ZTE Crescent (OUK)',
-    'u8815': 'Huawei Ascend G300'
+    'ace': 'HTC Desire HD',
+    'bravo': 'HTC Desire',
+    'm7ul': 'HTC One (GSM)',
+    'maguro': 'Samsung Galaxy Nexus',
+    'mako': 'Google Nexus 4',
+    'n7100': 'Samsung Galaxy Note II'
 }
