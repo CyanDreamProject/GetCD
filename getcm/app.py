@@ -51,7 +51,7 @@ class Application(tornado.web.Application):
         self.lookup = TemplateLookup(directories=[template_path], filesystem_checks=False)
 
         self.mirrorpool = WeightedChoice((
-            ('http://yauniks.dynvpn.de:6543/%s', 1000),
+            ('http://yauniks.dynvpn.de:85/%s', 1000),
         ))
 
 
