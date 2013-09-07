@@ -28,7 +28,7 @@ def shell():
 def deploy():
     local("rm -rf dist")
     local("python setup.py bdist_egg")
-    sudo("rm -rf /tmp/GetCM.egg")
-    put("dist/GetCM-*-py*.egg", "/tmp/GetCM.egg")
-    sudo("easy_install /tmp/GetCM.egg")
+    sudo("rm -rf /tmp/GetCD.egg")
+    put("dist/GetCD-*-py*.egg", "/tmp/GetCD.egg")
+    sudo("easy_install /tmp/GetCD.egg")
     sudo("supervisorctl restart cmbalance")

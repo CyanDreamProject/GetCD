@@ -2,8 +2,8 @@ import json
 import time
 import re
 from tornado.web import asynchronous
-from getcm import cache
-from getcm.model.schema import File
+from getcd import cache
+from getcd.model.schema import File
 from base import BaseHandler
 
 

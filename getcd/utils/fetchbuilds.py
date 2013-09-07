@@ -7,8 +7,8 @@ from sqlalchemy import create_engine
 from ConfigParser import ConfigParser
 from datetime import datetime
 
-from getcm.model import init_database, DBSession
-from getcm.model.schema import File
+from getcd.model import init_database, DBSession
+from getcd.model.schema import File
 
 
 class FetchBuild(object):
@@ -16,7 +16,7 @@ class FetchBuild(object):
         if len(sys.argv) == 2:
             self.configPath = sys.argv[1]
         else:
-            self.configPath = "/etc/getcm.ini"
+            self.configPath = "/etc/getcd.ini"
 
         config = ConfigParser()
         config.readfp(open(self.configPath, 'r'))
@@ -81,7 +81,7 @@ class FetchBuild(object):
                                 build_type = "test"
                         if "-RC" in artifact:
                             build_type = "RC"
-                        #cmd = "/usr/local/bin/getcm.addfile --timestamp %s --url %s --fullpath %s --type %s --config %s" % (timestamp, artifact, base, build_type, self.configPath)
+                        #cmd = "/usr/local/bin/getcd.addfile --timestamp %s --url %s --fullpath %s --type %s --config %s" % (timestamp, artifact, base, build_type, self.configPath)
                         try:
                             os.mkdir("/var/www/mirror/jenkins/%s" % build_number)
                         except:
@@ -93,7 +93,7 @@ class FetchBuild(object):
                             mirror_cmd = "ssh -p2200 root@mirror.sea.tdrevolution.net \"/root/add.sh /srv/mirror/jenkins/%s %s %s\"" % (build_number, artifact, fname)
                             print "Running: %s" % mirror_cmd
                             os.system(mirror_cmd)
-                            addfile_cmd = "/usr/local/bin/getcm.addfile --timestamp %s --file /var/www/mirror/jenkins/%s/%s --fullpath jenkins/%s/%s --type %s --config %s" % (timestamp, build_number, fname, build_number, fname, build_type, self.configPath)
+                            addfile_cmd = "/usr/local/bin/getcd.addfile --timestamp %s --file /var/www/mirror/jenkins/%s/%s --fullpath jenkins/%s/%s --type %s --config %s" % (timestamp, build_number, fname, build_number, fname, build_type, self.configPath)
                             print "Running: %s" % addfile_cmd
                             os.system(addfile_cmd)
                             #raise SystemExit()
@@ -101,6 +101,6 @@ class FetchBuild(object):
 
 def main():
     print("==================================")
-    print("Starting getcm.fetchbuilds at %s" % datetime.now())
+    print("Starting getcd.fetchbuilds at %s" % datetime.now())
     fb = FetchBuild()
     fb.run()

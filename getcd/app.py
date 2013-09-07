@@ -15,7 +15,7 @@ from mako.lookup import TemplateLookup
 
 from model import DBSession, init_database
 from handlers import BrowseHandler, SumHandler, ZipHandler, Base62Handler, ApiHandler, MirrorApplicationHandler
-from getcm.utils import WeightedChoice
+from getcd.utils import WeightedChoice
 
 define('port', 6543)
 define('debug', True)
@@ -57,7 +57,7 @@ class Application(tornado.web.Application):
 
 def run_server():
     # Define command line options
-    define('config', default='/etc/getcm.ini', type=unicode, help="Path to configuration file")
+    define('config', default='/etc/getcd.ini', type=unicode, help="Path to configuration file")
     tornado.options.parse_command_line()
     app = Application()
 

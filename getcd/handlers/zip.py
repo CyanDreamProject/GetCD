@@ -1,4 +1,4 @@
-from getcm.model.schema import File
+from getcd.model.schema import File
 from base import BaseHandler
 
 

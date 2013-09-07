@@ -1,8 +1,8 @@
 import time
 from tornado.web import asynchronous
-from getcm.model.schema import File, Device
-from getcm.model.devicemap import devicemap
-from getcm.utils.string import base62_encode
+from getcd.model.schema import File, Device
+from getcd.model.devicemap import devicemap
+from getcd.utils.string import base62_encode
 from base import BaseHandler
 
 

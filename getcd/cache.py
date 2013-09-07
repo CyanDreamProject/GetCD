@@ -1,7 +1,7 @@
 import time
 import logging
 
-from getcm.model import DBSession
+from getcd.model import DBSession
 
 
 class Cache(object):

@@ -1,5 +1,5 @@
-from getcm.model.schema import File
-from getcm.utils.string import base62_encode
+from getcd.model.schema import File
+from getcd.utils.string import base62_encode
 from base import BaseHandler
 
 

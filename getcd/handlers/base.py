@@ -1,5 +1,5 @@
 import tornado.web
-from getcm.utils import helpers
+from getcd.utils import helpers
 
 
 class BaseHandler(tornado.web.RequestHandler):

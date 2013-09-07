@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <title>CyanogenMod Downloads</title>
+    <title>CyanDream Downloads</title>
     <link rel="stylesheet" type="text/css" href="${h.static_url('/bootstrap/css/bootstrap.min.css')}"/>
     <link rel="stylesheet" type="text/css" href="${h.static_url('/bootstrap/css/bootstrap-responsive.min.css')}"/>
     <link rel="stylesheet" type="text/css" href="${h.static_url('core.css')}"/>
@@ -44,7 +44,7 @@
     <div class="container-fluid">
       <div class="row-fluid">
         <div class="span-12">
-          <img src="${h.static_url('logo.png')}" alt="CyanogenMod" />
+          <img src="${h.static_url('logo.png')}" alt="CyanDream" />
         </div>
       </div>
       <div class="row-fluid content">
