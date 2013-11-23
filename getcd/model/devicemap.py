@@ -2,6 +2,7 @@ devicemap = {
     'ace': 'HTC Desire HD',
     'bravo': 'HTC Desire',
     'crespo': 'Google Nexus S',
+    'hammerhead': 'Google Nexus 5',
     'm7att': 'HTC One (AT&T)',
     'm7spr': 'HTC One (Sprint)',
     'm7tmo': 'HTC One (T-Mobile)',
