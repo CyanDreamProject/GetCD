@@ -1,134 +1,150 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <title>CyanDream Downloads</title>
-    <link rel="stylesheet" type="text/css" href="${h.static_url('/bootstrap/css/bootstrap.min.css')}"/>
-    <link rel="stylesheet" type="text/css" href="${h.static_url('/bootstrap/css/bootstrap-responsive.min.css')}"/>
-    <link rel="stylesheet" type="text/css" href="${h.static_url('core.css')}"/>
-    <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
-    <script type="text/javascript"> 
+<!doctype html>  
+<head>
+<meta charset="UTF-8">
+<title>CyanDream Downloads</title>
+ <!--[if lt IE 9]>
+ <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
 
-      var _gaq = _gaq || [];
-      _gaq.push(['_setAccount', 'UA-39737599-2']);
-      _gaq.push(['_trackPageview']);
-     
-      (function() {
-        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-      })();
-     
-    </script> 
-    <style type="text/css">
-      body { padding: 10px 0 20px 0; }
-      .md5 { font-size: 80%; }
-      .content { padding-top: 10px; }
-      .adunit { text-align: center; padding-bottom: 10px; }
+<link rel="stylesheet" type="text/css" href="/css/styles.css"/>
+<link type="text/css" href="/css/css3.css" rel="stylesheet" />
+<script type="text/javascript" src=" https://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.js"></script>
+<script type="text/javascript" src="/js/jquery.pikachoose.js"></script>
+<script language="javascript">
+			$(document).ready(
+				function (){
+					$("#pikame").PikaChoose();
+				});
+		</script>
+		
 
-      a.device span.codename {
-      display:inline;
-      }
-      a.device:hover span.codename {
-      display:none;
-      }
-      a.device span.fullname {
-      display:none;
-      }
-      a.device:hover span.fullname {
-      display:inline;
-      }
-    </style>
-  </head>
-  <body>
-    <div class="container-fluid">
-      <div class="row-fluid">
-        <div class="span-12">
-          <img src="${h.static_url('logo.png')}" alt="CyanDream" />
-        </div>
-      </div>
-      <div class="row-fluid content">
-        <div class="span2">
-          <div class="well sidebar-nav">
-            <ul class="nav nav-list">
-              <li class="nav-header">Type</li>
-              <li id="type_all"><a href="javascript:void(0)" onclick="navigate_type('')">all</a></li>
-              <li id="type_stable"><a href="javascript:void(0)" onclick="navigate_type('stable')">stable</a></li>
-              <li id="type_RC"><a href="javascript:void(0)" onclick="navigate_type('RC')">release candidate</a></li>
-              <li id="type_nightly"><a href="javascript:void(0)" onclick="navigate_type('nightly')">nightly</a></li>
-              <li id="type_test"><a href="javascript:void(0)" onclick="navigate_type('test')">experiments</a></li>
-            </ul>
-          </div>
-          <div class="well sidebar-nav">
-            <ul class="nav nav-list">
-              <li class="nav-header">Devices</li>
-              <li id="device_all"><a href="javascript:void(0)" onclick="navigate_device('');">all</a></li>
-              % for device in devices:
-              <li id="device_${device}"><a href="javascript:void(0)" onclick="navigate_device('${device}');" class="device"><span class="codename">${device}</span><span class="fullname">${devicenames[device]}</span></a></li>
-              % endfor
-            </ul>
-          </div>
-        </div>
-        <div class="span10">
-          ${next.body()}
-        </div>
-      </div>
+
+    </head>
+    <body>
+	
+    <!--start container-->
+    <div id="container">
+
+    <!--start header-->
+
+    <header>
+ 
+    <!--start logo-->
+    <a href="#" id="logo"><img src="/images/logo.png" width="221" height="100" alt="logo"/></a>    
+
+	<!--end logo-->
+	
+   <!--start menu-->
+
+	<nav>
+    <ul>
+    <li><a href="javascript:void(0)" onclick="navigate_type('')">all</a></li>
+    <li><a href="javascript:void(0)" onclick="navigate_type('stable')">stable</a></li>
+	<li><a href="javascript:void(0)" onclick="navigate_type('RC')">release candidate</a></li>
+	<li><a href="javascript:void(0)" onclick="navigate_type('nightly')">nightly</a></li>
+    <li><a href="javascript:void(0)" onclick="navigate_type('test')">experiments</a></li>
+
+    </ul>
+    </nav>
+	<!--end menu-->
+	
+
+    <!--end header-->
+	</header>
+   
+   <!--start holder-->
+
+   <div class="holder_content1">
+    <section class="group4">
+		          ${next.body()}
+
+	</section>
+
+
+       
+   <section class="group5">
+   <h3>Devices</h3>
+   <li><a href="javascript:void(0)" onclick="navigate_device('');"><font color="000000">all</font></a></li>
+   % for device in devices:
+   <li><a href="javascript:void(0)" onclick="navigate_device('${device}');"><font color="000000">${devicenames[device]}</font></a></li>
+   % endfor
+   	
+
+
+	</section>
+
+   
     </div>
-  <script type="text/javascript">
-    (function(){
-        window.urlParams = {};
-        var e,
-                a = /\+/g,  // Regex for replacing addition symbol with a space
-                r = /([^&=]+)=?([^&]*)/g,
-                d = function (s) { return decodeURIComponent(s.replace(a, " ")); },
-                q = window.location.search.substring(1);
-        while (e = r.exec(q)) {
-            window.urlParams[d(e[1])] = d(e[2]);
-        }
-    })();
+    <!--end holder-->
 
-    (function(){
-        if (window.urlParams.device) {
-            $("li#device_" + window.urlParams.device).addClass('active');
-        } else {
-            $('li#device_all').addClass('active');
-        }
-        if (window.urlParams.type) {
-            $("li#type_" + window.urlParams.type).addClass('active');
-        } else {
-            $('li#type_all').addClass('active');
-        }
-    })(jQuery);
+   
+   
+    </div>
+   <!--end container-->
+   
+   <!--start footer-->
+   <footer>
+   <div class="container">  
+   <div id="FooterTwo"> © 2011 CyanDream project </div>
+   <div id="FooterTree"> Valid html5, design and code by <a href="http://www.marijazaric.com">marija zaric - creative simplicity</a>   </div> 
+   </div>
+   </footer>
+   <script type="text/javascript">
+     (function(){
+         window.urlParams = {};
+         var e,
+                 a = /\+/g,  // Regex for replacing addition symbol with a space
+                 r = /([^&=]+)=?([^&]*)/g,
+                 d = function (s) { return decodeURIComponent(s.replace(a, " ")); },
+                 q = window.location.search.substring(1);
+         while (e = r.exec(q)) {
+             window.urlParams[d(e[1])] = d(e[2]);
+         }
+     })();
 
-    window.navigate_device = function(device) {
-        if (window.urlParams.type) {
-            location.href = '/?' + $.param({
-                device: device,
-                type: window.urlParams.type
-            });
-        } else {
-            if (device == "") {
-                location.href = '/';
-                return
-            }
-            location.href = '/?' + $.param({device: device});
-        }
-    }
+     (function(){
+         if (window.urlParams.device) {
+             $("li#device_" + window.urlParams.device).addClass('active');
+         } else {
+             $('li#device_all').addClass('active');
+         }
+         if (window.urlParams.type) {
+             $("li#type_" + window.urlParams.type).addClass('active');
+         } else {
+             $('li#type_all').addClass('active');
+         }
+     })(jQuery);
 
-    window.navigate_type = function(type) {
-        if (window.urlParams.device) {
-            location.href = '/?' + $.param({
-                device: window.urlParams.device,
-                type: type
-            });
-        } else {
-            if (type == "") {
-                location.href = '/';
-                return
-            }
-            location.href = '/?' + $.param({type: type});
-        }
-    }
-  </script>
-  </body>
-</html>
+     window.navigate_device = function(device) {
+         if (window.urlParams.type) {
+             location.href = '/?' + $.param({
+                 device: device,
+                 type: window.urlParams.type
+             });
+         } else {
+             if (device == "") {
+                 location.href = '/';
+                 return
+             }
+             location.href = '/?' + $.param({device: device});
+         }
+     }
+
+     window.navigate_type = function(type) {
+         if (window.urlParams.device) {
+             location.href = '/?' + $.param({
+                 device: window.urlParams.device,
+                 type: type
+             });
+         } else {
+             if (type == "") {
+                 location.href = '/';
+                 return
+             }
+             location.href = '/?' + $.param({type: type});
+         }
+     }
+   </script>
+   <!--end footer-->
+<!-- Free template distributed by http://freehtml5templates.com -->   
+   </body></html>

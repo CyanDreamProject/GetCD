@@ -3,3 +3,4 @@ GetCM.egg-info/*
 build/*
 dist/*
 *.db
+.DS_Store
