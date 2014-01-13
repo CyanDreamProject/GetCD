@@ -34,26 +34,25 @@
 <table class="table table-bordered table-striped">
   <thead>
     <tr>
-      <th>Device</th>
-      <th>Type</th>
-      <th>Filename</th>
-      <th>Size</th>
-      <th>Date Added</th>
+      <th><strong>Device</strong></th>
+      <th><b>Type</b></th>
+      <th><b>Filename</b></th>
+      <th><b>Size</b></th>
+      <th><b>Date Added</b></th>
     </tr>
   </thead>
   <tbody>
     % for file in files:
     <% device=file.device %>
     <tr>
-      <td><a href="${device_link(device)}">${file.device|h}</a><br/><small class="md5">${devicenames[file.device]|h}</small></td>
+      <td><a href="${device_link(device)}">${file.device|h}</a><br/><font size="0">${devicenames[file.device]|h}</font></td>
       <td>${file.type}</td>
       <td>
         <b>Direct Download</b>: 
-        <a href="/get/${file.full_path}">${file.filename|h}</a>
-        <br/>
-        <small class="md5">md5sum: ${file.md5sum|h} &nbsp;&nbsp;&nbsp;&nbsp; Short URL: <a href="http://yauniks.dynvpn.de:86/get/${file.base62}">http://yauniks.dynvpn.de:86/get/${file.base62}</a></small>
+        <a href="/get/${file.full_path}">click!</a>
+        <p><font size="-2">md5sum: ${file.md5sum|h} &nbsp;&nbsp;&nbsp;&nbsp; Short URL: <a href="http://yauniks.dynvpn.de:86/get/${file.base62}">http://yauniks.dynvpn.de:86/get/${file.base62}</a></font></p>
       </td>
-      <td>${file.human_size|h}</small></td>
+      <td>${file.human_size|h}</size></td>
       <td>${file.date_created|h}</td>
     </tr>
     % endfor

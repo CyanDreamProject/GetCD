@@ -1,94 +1,115 @@
-<!doctype html>  
-<head>
-<meta charset="UTF-8">
-<title>CyanDream Downloads</title>
- <!--[if lt IE 9]>
- <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-  <![endif]-->
+<!DOCTYPE HTML>
+<!--
+	Prologue 1.1 by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>CyanDream downloads</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<base href="http://yauniks.dynvpn.de:85/" >
+		<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600" rel="stylesheet" type="text/css" />
+		<!--[if lte IE 8]><script src="http://yauniks.dynvpn.de:85/js/html5shiv.js"></script><![endif]-->
+		<script src="http://yauniks.dynvpn.de:85/js/jquery.min.js"></script>
+		<script src="http://yauniks.dynvpn.de:85/js/skel.min.js"></script>
+		<script src="http://yauniks.dynvpn.de:85/js/skel-panels.min.js"></script>
+		<script src="http://yauniks.dynvpn.de:85/js/init.js"></script>
+		<noscript>
+			<link rel="stylesheet" href="http://yauniks.dynvpn.de:85/css/skel-noscript.css" />
+			<link rel="stylesheet" href="http://yauniks.dynvpn.de:85/css/style.css" />
+			<link rel="stylesheet" href="http://yauniks.dynvpn.de:85/css/style-wide.css" />
+		</noscript>
+		<!--[if lte IE 9]><link rel="stylesheet" href="http://yauniks.dynvpn.de:85/css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="http://yauniks.dynvpn.de:85/css/ie8.css" /><![endif]-->
+	</head>
+	<body>
 
-<link rel="stylesheet" type="text/css" href="/css/styles.css"/>
-<link type="text/css" href="/css/css3.css" rel="stylesheet" />
-<script type="text/javascript" src=" https://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.js"></script>
-<script type="text/javascript" src="/js/jquery.pikachoose.js"></script>
-<script language="javascript">
-			$(document).ready(
-				function (){
-					$("#pikame").PikaChoose();
-				});
-		</script>
-		
+		<!-- Header -->
+			<div id="header" class="skel-panels-fixed">
 
+				<div class="top">
 
-    </head>
-    <body>
-	
-    <!--start container-->
-    <div id="container">
+					<!-- Logo -->
+						<div id="logo">
+							<h1 id="title">CyanDream project</h1>
+							<span class="byline">Downloads</span>
+						</div>
 
-    <!--start header-->
-
-    <header>
- 
-    <!--start logo-->
-    <a href="#" id="logo"><img src="/images/logo.png" width="221" height="100" alt="logo"/></a>    
-
-	<!--end logo-->
-	
-   <!--start menu-->
-
-	<nav>
+					<!-- Nav -->
+						<nav id="nav">
     <ul>
     <li><a href="javascript:void(0)" onclick="navigate_type('')">all</a></li>
     <li><a href="javascript:void(0)" onclick="navigate_type('stable')">stable</a></li>
 	<li><a href="javascript:void(0)" onclick="navigate_type('RC')">release candidate</a></li>
 	<li><a href="javascript:void(0)" onclick="navigate_type('nightly')">nightly</a></li>
     <li><a href="javascript:void(0)" onclick="navigate_type('test')">experiments</a></li>
+	<li><a href="#devices" id="devices" class="skel-panels-ignoreHref">Select device</a></li>
 
     </ul>
-    </nav>
-	<!--end menu-->
-	
+						</nav>
+						
+				</div>
+				
+				<div class="bottom">
 
-    <!--end header-->
-	</header>
-   
-   <!--start holder-->
+					<!-- Social Icons -->
+						<ul class="icons">
+							<li><a href="https://twitter.com/cd-jenkins" class="fa fa-twitter solo"><span>Twitter</span></a></li>
+							<li><a href="#" class="fa fa-facebook solo"><span>Facebook</span></a></li>
+							<li><a href="https://github.com/CyanDreamProject" class="fa fa-github solo"><span>Github</span></a></li>
+							<li><a href="#" class="fa fa-dribbble solo"><span>Dribbble</span></a></li>
+							<li><a href="#" class="fa fa-envelope solo"><span>Email</span></a></li>
+						</ul>
+				
+				</div>
+			
+			</div>
 
-   <div class="holder_content1">
-    <section class="group4">
+		<!-- Main -->
+			<div id="main">
+			
+					<section id="top" class="one">
+						<div class="container">
+
+							<img src="http://yauniks.dynvpn.de:85/images/pic01.jpg" alt="" />
+
 		          ${next.body()}
 
-	</section>
+
+						</div>
+					</section>
+					
+					<section id="devices" class="three">
+						<div class="container">
 
 
-       
-   <section class="group5">
-   <h3>Devices</h3>
-   <li><a href="javascript:void(0)" onclick="navigate_device('');"><font color="000000">all</font></a></li>
-   % for device in devices:
-   <li><a href="javascript:void(0)" onclick="navigate_device('${device}');"><font color="000000">${devicenames[device]}</font></a></li>
+						    <a href="javascript:void(0)" onclick="navigate_device('');"><font color="000000">all</font></a>
+							% for device in devices:
+							 - <a href="javascript:void(0)" onclick="navigate_device('${device}');"><font color="000000">${devicenames[device]}</font></a>
    % endfor
-   	
+							 
 
+						</div>
+					</section>
+			</div>
 
-	</section>
+		<!-- Footer -->
+			<div id="footer">
+				
+				<!-- Copyright -->
+					<div class="copyright">
+						<p>&copy; 2014 CyanDream project. All rights reserved.</p>
+						<ul class="menu">
+							<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							<li>Images: <a href="http://ineedchemicalx.deviantart.com">Felicia Simion</a></li>
+						</ul>
+					</div>
+				
+			</div>
 
-   
-    </div>
-    <!--end holder-->
-
-   
-   
-    </div>
-   <!--end container-->
-   
-   <!--start footer-->
-   <footer>
-   <div class="container">  
-   <div id="FooterTwo"> © 2011 CyanDream project </div>
-   <div id="FooterTree"> Valid html5, design and code by <a href="http://www.marijazaric.com">marija zaric - creative simplicity</a>   </div> 
-   </div>
-   </footer>
    <script type="text/javascript">
      (function(){
          window.urlParams = {};
@@ -117,34 +138,33 @@
 
      window.navigate_device = function(device) {
          if (window.urlParams.type) {
-             location.href = '/?' + $.param({
+             location.href = 'http://yauniks.dynvpn.de:86/?' + $.param({
                  device: device,
                  type: window.urlParams.type
              });
          } else {
              if (device == "") {
-                 location.href = '/';
+                 location.href = 'http://yauniks.dynvpn.de:86/';
                  return
              }
-             location.href = '/?' + $.param({device: device});
+             location.href = 'http://yauniks.dynvpn.de:86/?' + $.param({device: device});
          }
      }
 
      window.navigate_type = function(type) {
          if (window.urlParams.device) {
-             location.href = '/?' + $.param({
+             location.href = 'http://yauniks.dynvpn.de:86/?' + $.param({
                  device: window.urlParams.device,
                  type: type
              });
          } else {
              if (type == "") {
-                 location.href = '/';
+                 location.href = 'http://yauniks.dynvpn.de:86/';
                  return
              }
-             location.href = '/?' + $.param({type: type});
+             location.href = 'http://yauniks.dynvpn.de:86/?' + $.param({type: type});
          }
      }
    </script>
-   <!--end footer-->
-<!-- Free template distributed by http://freehtml5templates.com -->   
-   </body></html>
+	</body>
+</html>
