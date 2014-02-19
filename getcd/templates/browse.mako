@@ -45,11 +45,11 @@
     % for file in files:
     <% device=file.device %>
     <tr>
-      <td><a href="${device_link(device)}">${file.device|h}</a><br/><font size="0">${devicenames[file.device]|h}</font></td>
+      <td><a href="http://yauniks.dynvpn.de:86/${device_link(device)}">${file.device|h}</a><br/><font size="0">${devicenames[file.device]|h}</font></td>
       <td>${file.type}</td>
       <td>
         <b>Direct Download</b>: 
-        <a href="/get/${file.full_path}">click!</a>
+        <a href="http://yauniks.dynvpn.de:86/get/${file.full_path}">click!</a>
         <p><font size="-2">md5sum: ${file.md5sum|h} &nbsp;&nbsp;&nbsp;&nbsp; Short URL: <a href="http://yauniks.dynvpn.de:86/get/${file.base62}">http://yauniks.dynvpn.de:86/get/${file.base62}</a></font></p>
       </td>
       <td>${file.human_size|h}</size></td>
