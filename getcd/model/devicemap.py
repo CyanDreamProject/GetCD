@@ -16,6 +16,7 @@ devicemap = {
     'hltevzw': 'Samsung Galaxy Note 3 (Verizon)',
     'hltexx': 'Samsung Galaxy Note 3 (Global)',
     'honami': 'Sony Xperia Z1 (Google Play Edition)',
+    'jflte': 'Samsung Galaxy S4',
     'jflteatt': 'Samsung Galaxy S4 (AT&T)',
     'jfltecan': 'Samsung Galaxy S4 (Canada)',
     'jfltecri': 'Samsung Galaxy S4 (Cricket)',
