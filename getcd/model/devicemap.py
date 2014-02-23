@@ -5,6 +5,7 @@ devicemap = {
     'crespo': 'Google Nexus S',
     'deb': 'Google Nexus 7 2013 (4G)',
     'dlx': 'HTC Droid DNA',
+    'falcon': 'Motorola Moto G',
     'find5': 'Oppo Find 5',
     'flo': 'Google Nexus 7 2013 (Wi-Fi)',
     'galaxysmtd': 'Samsung Galaxy S',
@@ -41,7 +42,6 @@ devicemap = {
     'togari': 'Sony Xperia Z Ultra',
     'togari_gpe': 'Sony Xperia Z Ultra (Google Play Edition)',
     'toroplus': 'Google Galaxy Nexus (Sprint)',
-    'xt1032': 'Motorola Moto G (Global)',
     'xt1053': 'Motorola Moto X (T-Mobile)',
     'xt1060': 'Motorola Moto X (Verizon)'
 }
