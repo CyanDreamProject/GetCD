@@ -10,20 +10,19 @@
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<meta name="description" content="" />
 		<meta name="keywords" content="" />
-		<base href="http://yauniks.dynvpn.de:85/" >
 		<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600" rel="stylesheet" type="text/css" />
-		<!--[if lte IE 8]><script src="http://yauniks.dynvpn.de:85/js/html5shiv.js"></script><![endif]-->
-		<script src="http://yauniks.dynvpn.de:85/js/jquery.min.js"></script>
-		<script src="http://yauniks.dynvpn.de:85/js/skel.min.js"></script>
-		<script src="http://yauniks.dynvpn.de:85/js/skel-panels.min.js"></script>
-		<script src="http://yauniks.dynvpn.de:85/js/init.js"></script>
+		<!--[if lte IE 8]><script src="/static/js/html5shiv.js"></script><![endif]-->
+		<script src="/static/js/jquery.min.js"></script>
+		<script src="/static/js/skel.min.js"></script>
+		<script src="/static/js/skel-panels.min.js"></script>
+		<script src="/static/js/init.js"></script>
 		<noscript>
-			<link rel="stylesheet" href="http://yauniks.dynvpn.de:85/css/skel-noscript.css" />
-			<link rel="stylesheet" href="http://yauniks.dynvpn.de:85/css/style.css" />
-			<link rel="stylesheet" href="http://yauniks.dynvpn.de:85/css/style-wide.css" />
+			<link rel="stylesheet" href="/static/css/skel-noscript.css" />
+			<link rel="stylesheet" href="/static/css/style.css" />
+			<link rel="stylesheet" href="/static/css/style-wide.css" />
 		</noscript>
-		<!--[if lte IE 9]><link rel="stylesheet" href="http://yauniks.dynvpn.de:85/css/ie9.css" /><![endif]-->
-		<!--[if lte IE 8]><link rel="stylesheet" href="http://yauniks.dynvpn.de:85/css/ie8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="/static/css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="/static/css/ie8.css" /><![endif]-->
 	</head>
 	<body>
 
@@ -74,7 +73,7 @@
 					<section id="top" class="one">
 						<div class="container">
 
-							<img src="http://yauniks.dynvpn.de:85/images/pic01.jpg" alt="" />
+							<img src="/static/images/pic01.jpg" alt="" />
 
 		          ${next.body()}
 
