@@ -137,31 +137,31 @@
 
      window.navigate_device = function(device) {
          if (window.urlParams.type) {
-             location.href = 'http://yauniks.dynvpn.de:86/?' + $.param({
+             location.href = '/?' + $.param({
                  device: device,
                  type: window.urlParams.type
              });
          } else {
              if (device == "") {
-                 location.href = 'http://yauniks.dynvpn.de:86/';
+                 location.href = '/';
                  return
              }
-             location.href = 'http://yauniks.dynvpn.de:86/?' + $.param({device: device});
+             location.href = '/?' + $.param({device: device});
          }
      }
 
      window.navigate_type = function(type) {
          if (window.urlParams.device) {
-             location.href = 'http://yauniks.dynvpn.de:86/?' + $.param({
+             location.href = '/?' + $.param({
                  device: window.urlParams.device,
                  type: type
              });
          } else {
              if (type == "") {
-                 location.href = 'http://yauniks.dynvpn.de:86/';
+                 location.href = '/';
                  return
              }
-             location.href = 'http://yauniks.dynvpn.de:86/?' + $.param({type: type});
+             location.href = '/?' + $.param({type: type});
          }
      }
    </script>
