@@ -50,7 +50,7 @@
       <td>
         <b>Direct Download</b>: 
         <a href="/get/${file.full_path}">click!</a>
-        <p><font size="-2">md5sum: ${file.md5sum|h} &nbsp;&nbsp;&nbsp;&nbsp; Short URL: <a href="/get/${file.base62}">/get/${file.base62}</a></font></p>
+        <p><font size="-2">md5sum: ${file.md5sum|h} &nbsp;&nbsp;&nbsp;&nbsp; Short URL: <a href="http://amfox.eu:8080/download.php?file=${file.base62}">http://amfox.eu:8080/download.php?file=${file.base62}</a></font></p>
       </td>
       <td>${file.human_size|h}</size></td>
       <td>${file.date_created|h}</td>
