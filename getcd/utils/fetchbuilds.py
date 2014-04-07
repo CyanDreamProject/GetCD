@@ -23,7 +23,7 @@ class FetchBuild(object):
         init_database(create_engine(config.get('database', 'uri')))
 
     def get_builds(self):
-        url = "http://yauniks.dynvpn.de:8080/job/cyandream/api/json"
+        url = "http://localhost:8080/job/cyandream/api/json"
         data = urllib2.urlopen(url).read()
         data = json.loads(data)
 
@@ -48,7 +48,7 @@ class FetchBuild(object):
         result = []
         for artifact in data['artifacts']:
             if artifact['displayPath'].endswith(".zip") or artifact['displayPath'].endswith("CHANGES.txt"):  # and "NIGHTLY" in artifact['displayPath'] or "SNAPSHOT" in artifact['displayPath'] or "EXPERIMENTAL" in artifact['displayPath']:
-                url = "http://yauniks.dynvpn.de:8080/job/cyandream/%s/artifact/archive/%s" % (build['number'], artifact['displayPath'])
+                url = "http://localhost:8080/job/cyandream/%s/artifact/archive/%s" % (build['number'], artifact['displayPath'])
                 timestamp = (data['timestamp'] + data['duration']) / 1000
                 result.append((url, timestamp))
         return result
@@ -59,13 +59,13 @@ class FetchBuild(object):
             if artifactlist:
                 for artifactdata in artifactlist:
                     artifact, timestamp = artifactdata
-                    full_path = "%s/%s" % (artifact.split("/")[5], artifact.split("/")[-1])
+                    full_path = "jenkins/%s/%s" % (artifact.split("/")[5], artifact.split("/")[-1])
                     if os.path.exists("/var/www/mirror/%s" % full_path):
                         print "Exists, skipping."
                         continue
                     fileobj = File.get_by_fullpath(full_path)
                     if not fileobj:
-                        base = "artifacts/%s" % artifact.replace("http://yauniks.dynvpn.de:8080/job/cyandream/", "")
+                        base = "artifacts/%s" % artifact.replace("http://localhost:8080/job/cyandream/", "")
                         build_number = base.split("/")[1]
                         fname = base.split("/")[-1]
                         build_type = "stable"
