@@ -12,17 +12,17 @@
 		<meta name="keywords" content="" />
 		<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600" rel="stylesheet" type="text/css" />
 		<!--[if lte IE 8]><script src="/static/js/html5shiv.js"></script><![endif]-->
-		<script src="/static/js/jquery.min.js"></script>
-		<script src="/static/js/skel.min.js"></script>
-		<script src="/static/js/skel-panels.min.js"></script>
-		<script src="/static/js/init.js"></script>
+		<script src="http://amfox.eu:86/static/js/jquery.min.js"></script>
+		<script src="http://amfox.eu:86/static/js/skel.min.js"></script>
+		<script src="http://amfox.eu:86/static/js/skel-panels.min.js"></script>
+		<script src="http://amfox.eu:86/static/js/init.js"></script>
 		<noscript>
-			<link rel="stylesheet" href="/static/css/skel-noscript.css" />
-			<link rel="stylesheet" href="/static/css/style.css" />
-			<link rel="stylesheet" href="/static/css/style-wide.css" />
+			<link rel="stylesheet" href="http://amfox.eu:86/static/css/skel-noscript.css" />
+			<link rel="stylesheet" href="http://amfox.eu:86/static/css/style.css" />
+			<link rel="stylesheet" href="http://amfox.eu:86/static/css/style-wide.css" />
 		</noscript>
-		<!--[if lte IE 9]><link rel="stylesheet" href="/static/css/ie9.css" /><![endif]-->
-		<!--[if lte IE 8]><link rel="stylesheet" href="/static/css/ie8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="http://amfox.eu:86/static/css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="http://amfox.eu:86/static/css/ie8.css" /><![endif]-->
 	</head>
 	<body>
 
