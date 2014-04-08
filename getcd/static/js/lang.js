@@ -39,7 +39,7 @@ function lang(lang) {
     $('#title').text('CyanDream Project');
     $('#navall').children().text('alles');
     $('#navstable').children().text('stabiel');
-    $('#navrc').children().text('releasekandidaad');
+    $('#navrc').children().text('releasekandidaat');
     $('#navnightly').children().text('nightly');
     $('#navexperiments').children().text('experimenten');
     $('#navnightly').children().text('nightly');
