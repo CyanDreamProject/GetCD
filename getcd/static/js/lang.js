@@ -35,6 +35,24 @@ function lang(lang) {
     $('.directdl').text('Direct Download');
     $('.clicklink').text('click!');
   }
+  if(lang == "nl") {
+    $('#title').text('CyanDream Project');
+    $('#navall').children().text('alles');
+    $('#navstable').children().text('stabiel');
+    $('#navrc').children().text('releasekandidaad');
+    $('#navnightly').children().text('nightly');
+    $('#navexperiments').children().text('experimenten');
+    $('#navnightly').children().text('nightly');
+    $('#selectdevice').children().text('selecteer uw toestel');
+    $('#browsefiles').text('Bladeren ');
+    $('#devicename').children().text('Toestel');
+    $('#typename').children().text('Type');
+    $('#filename').children().text('Link');
+    $('#sizename').children().text('Grootte');
+    $('#dateaddedname').children().text('Datum toegevoegd');
+    $('.directdl').text('Directe Download');
+    $('.clicklink').text('Klik!');
+  }
 }
 function select(language) {
 lang(language);
