@@ -36,7 +36,7 @@
     <tr>
       <th id="devicename"><strong>Device</strong></th>
       <th id="typename"><b>Type</b></th>
-      <th id="filename"><b>Filename</b></th>
+      <th id="filename"><b>Link</b></th>
       <th id="sizename"><b>Size</b></th>
       <th id="dateaddedname"><b>Date Added</b></th>
     </tr>

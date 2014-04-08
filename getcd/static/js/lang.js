@@ -11,7 +11,7 @@ function lang(lang) {
     $('#browsefiles').text('Dateien durchsuchen');
     $('#devicename').children().text('Gerätename');
     $('#typename').children().text('Typ');
-    $('#filename').children().text('Dateiname');
+    $('#filename').children().text('Link');
     $('#sizename').children().text('Größe');
     $('#dateaddedname').children().text('Hinzugefügt');
     $('.directdl').text('Direkter Download');
@@ -29,7 +29,7 @@ function lang(lang) {
     $('#browsefiles').text('Browse Files ');
     $('#devicename').children().text('Device');
     $('#typename').children().text('Type');
-    $('#filename').children().text('Filename');
+    $('#filename').children().text('Link');
     $('#sizename').children().text('Size');
     $('#dateaddedname').children().text('Date Added');
     $('.directdl').text('Direct Download');
