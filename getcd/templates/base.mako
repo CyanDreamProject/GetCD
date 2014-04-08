@@ -50,6 +50,7 @@
 
     </ul>
 						</nav>
+<br><a href="javascript:void(0)" onclick="select('de')">de</a>&nbsp;<a href="javascript:void(0)" onclick="select('en')">en</a>
 						
 				</div>
 			
