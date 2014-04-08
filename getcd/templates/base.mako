@@ -36,6 +36,7 @@
 						<div id="logo">
 							<h1 id="title">CyanDream project</h1>
 							<span class="byline">Downloads</span>
+							<br><a href="javascript:void(0)" onclick="select('de')">de</a>&nbsp;<a href="javascript:void(0)" onclick="select('en')">en</a>
 						</div>
 
 					<!-- Nav -->
@@ -50,7 +51,6 @@
 
     </ul>
 						</nav>
-<br><a href="javascript:void(0)" onclick="select('de')">de</a>&nbsp;<a href="javascript:void(0)" onclick="select('en')">en</a>
 						
 				</div>
 			
