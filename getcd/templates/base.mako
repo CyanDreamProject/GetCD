@@ -14,6 +14,7 @@
 		<!--[if lte IE 8]><script src="/static/js/html5shiv.js"></script><![endif]-->
 		<script src="http://amfox.eu:86/static/js/jquery.min.js"></script>
 		<script src="http://amfox.eu:86/static/js/skel.min.js"></script>
+		<script src="http://amfox.eu:86/static/js/lang.js"></script>
 		<script src="http://amfox.eu:86/static/js/skel-panels.min.js"></script>
 		<script src="http://amfox.eu:86/static/js/init.js"></script>
 		<noscript>
@@ -51,6 +52,10 @@
 						</nav>
 						
 				</div>
+			<div class="bottom">
+			<div align="center"><a href="#" onclick="select('de')>de</a>&nbsp;<a href="#" onclick="select('en')>en</a>
+
+			</div>
 			
 			</div>
 
