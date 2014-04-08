@@ -52,10 +52,6 @@
 						</nav>
 						
 				</div>
-			<div class="bottom">
-			<div align="center"><a href="#" onclick="select('de')>de</a>&nbsp;<a href="#" onclick="select('en')>en</a>
-
-			</div>
 			
 			</div>
 
