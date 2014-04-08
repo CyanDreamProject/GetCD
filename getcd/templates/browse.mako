@@ -48,8 +48,8 @@
       <td><a href="${device_link(device)}">${file.device|h}</a><br/><font size="0">${devicenames[file.device]|h}</font></td>
       <td>${file.type}</td>
       <td>
-        <b id="directdl">Direct Download</b>: 
-        <a id="clicklink" href="http://amfox.eu:8080/download.php?file=${file.full_path}">click!</a>
+        <b class="directdl">Direct Download</b>: 
+        <a class="clicklink" href="http://amfox.eu:8080/download.php?file=${file.full_path}">click!</a>
         <p><font size="-2">md5sum: ${file.md5sum|h}</font></p>
       </td>
       <td>${file.human_size|h}</size></td>

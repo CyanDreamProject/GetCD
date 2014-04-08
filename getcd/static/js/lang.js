@@ -14,8 +14,8 @@ function lang(lang) {
     $('#filename').children().text('Dateiname');
     $('#sizename').children().text('Größe');
     $('#dateaddedname').children().text('Hinzugefügt');
-    $('#directdl').text('Direkter Download');
-    $('#clicklink').text('klick!');
+    $('.directdl').text('Direkter Download');
+    $('.clicklink').text('klick!');
   }
   if(lang == "en") {
     $('#title').text('CyanDream project');
@@ -32,8 +32,8 @@ function lang(lang) {
     $('#filename').children().text('Filename');
     $('#sizename').children().text('Size');
     $('#dateaddedname').children().text('Date Added');
-    $('#directdl').text('Direct Download');
-    $('#clicklink').text('click!');
+    $('.directdl').text('Direct Download');
+    $('.clicklink').text('click!');
   }
 }
 function select(language) {
