@@ -29,16 +29,16 @@
     % endif
 </%def>
 
-<h3>Browse Files ${filter_label()}</h3>
+<h3 id="browsefiles">Browse Files ${filter_label()}</h3>
 
 <table class="table table-bordered table-striped">
   <thead>
     <tr>
-      <th><strong>Device</strong></th>
-      <th><b>Type</b></th>
-      <th><b>Filename</b></th>
-      <th><b>Size</b></th>
-      <th><b>Date Added</b></th>
+      <th id="devicename"><strong>Device</strong></th>
+      <th id="typename"><b>Type</b></th>
+      <th id="filename"><b>Filename</b></th>
+      <th id="sizename"><b>Size</b></th>
+      <th id="dateaddedname"><b>Date Added</b></th>
     </tr>
   </thead>
   <tbody>
@@ -48,8 +48,8 @@
       <td><a href="${device_link(device)}">${file.device|h}</a><br/><font size="0">${devicenames[file.device]|h}</font></td>
       <td>${file.type}</td>
       <td>
-        <b>Direct Download</b>: 
-        <a href="http://amfox.eu:8080/download.php?file=${file.full_path}">click!</a>
+        <b id="directdl">Direct Download</b>: 
+        <a id="clicklink" href="http://amfox.eu:8080/download.php?file=${file.full_path}">click!</a>
         <p><font size="-2">md5sum: ${file.md5sum|h}</font></p>
       </td>
       <td>${file.human_size|h}</size></td>

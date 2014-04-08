@@ -40,29 +40,16 @@
 					<!-- Nav -->
 						<nav id="nav">
     <ul>
-    <li><a href="javascript:void(0)" onclick="navigate_type('')">all</a></li>
-    <li><a href="javascript:void(0)" onclick="navigate_type('stable')">stable</a></li>
-	<li><a href="javascript:void(0)" onclick="navigate_type('RC')">release candidate</a></li>
-	<li><a href="javascript:void(0)" onclick="navigate_type('nightly')">nightly</a></li>
-    <li><a href="javascript:void(0)" onclick="navigate_type('test')">experiments</a></li>
-	<li><a href="#devices" id="devices" class="skel-panels-ignoreHref">Select device</a></li>
+    <li id="navall"><a href="javascript:void(0)" onclick="navigate_type('')">all</a></li>
+    <li id="navstable"><a href="javascript:void(0)" onclick="navigate_type('stable')">stable</a></li>
+	<li id="navrc"><a href="javascript:void(0)" onclick="navigate_type('RC')">release candidate</a></li>
+	<li id="navnightly"><a href="javascript:void(0)" onclick="navigate_type('nightly')">nightly</a></li>
+    <li id="navexperiments"><a href="javascript:void(0)" onclick="navigate_type('test')">experiments</a></li>
+	<li id="selectdevice"><a href="#devices" id="devices" class="skel-panels-ignoreHref">Select device</a></li>
 
     </ul>
 						</nav>
 						
-				</div>
-				
-				<div class="bottom">
-
-					<!-- Social Icons -->
-						<ul class="icons">
-							<li><a href="https://twitter.com/cd-jenkins" class="fa fa-twitter solo"><span>Twitter</span></a></li>
-							<li><a href="#" class="fa fa-facebook solo"><span>Facebook</span></a></li>
-							<li><a href="https://github.com/CyanDreamProject" class="fa fa-github solo"><span>Github</span></a></li>
-							<li><a href="#" class="fa fa-dribbble solo"><span>Dribbble</span></a></li>
-							<li><a href="#" class="fa fa-envelope solo"><span>Email</span></a></li>
-						</ul>
-				
 				</div>
 			
 			</div>
